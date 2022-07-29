@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "browser": "apps/browser",
-    "browser-e2e": "apps/browser-e2e"
+    "browser-e2e": "apps/browser-e2e",
+    "core": "libs/core",
+    "desktop": "apps/desktop"
   }
 }

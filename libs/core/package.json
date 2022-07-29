@@ -1,0 +1,9 @@
+{
+  "name": "@dalre/core",
+  "type": "commonjs",
+  "scripts": {
+    "build": "rimraf dist pkg && webpack",
+    "serve": "rimraf dist pkg && webpack-dev-server --open -d",
+    "test": "cargo test && wasm-pack test --headless"
+  }
+}
