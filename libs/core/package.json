@@ -1,9 +1,10 @@
 {
   "name": "@dalre/core",
-  "type": "commonjs",
+  "type": "module",
+  "module": "index.js",
   "scripts": {
     "build": "rimraf dist pkg && webpack",
-    "serve": "rimraf dist pkg && webpack-dev-server --open -d",
+    "serve": "rimraf dist pkg && webpack-dev-server -d eval-source-map",
     "test": "cargo test && wasm-pack test --headless"
   }
 }

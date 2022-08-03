@@ -1,1 +1,1 @@
-import('./pkg/index.js').catch(console.error);
+export * from './pkg/index.js';

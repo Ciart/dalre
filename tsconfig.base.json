@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@dalre/core": ["libs/core/src/index.ts"]
+      "@dalre/core": ["libs/core/index.js"],
     }
   },
   "exclude": ["node_modules", "tmp"]
