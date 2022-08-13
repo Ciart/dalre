@@ -1,0 +1,9 @@
+.container {
+  background-color: black;
+}
+
+.item {
+  padding: 0.25rem;
+  color: white;
+  font-size: 0.75rem;
+}

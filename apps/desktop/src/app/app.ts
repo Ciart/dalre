@@ -74,6 +74,7 @@ export default class App {
     });
     App.mainWindow.setMenu(null);
     App.mainWindow.center();
+    App.mainWindow.webContents.openDevTools();
 
     // if main window is ready to show, close the splash window and show the main window
     App.mainWindow.once('ready-to-show', () => {

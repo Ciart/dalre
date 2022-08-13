@@ -1,13 +1,22 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
-import NxWelcome from './nx-welcome';
+import { CanvasPanel } from './components/canvas-panel';
+import { SplitView } from './components/split-view';
+import { SplitViewItem } from './components/split-view-item';
+import { StatusBar } from './status-bar';
+import { ToolBar } from './tool-bar';
 
 export function App() {
   return (
-    <>
-      <NxWelcome title="browser" />
-      <div />
-    </>
+    <SplitView direction="column">
+      <SplitViewItem isExpanded>
+        <SplitView direction="row">
+          <ToolBar />
+          <SplitViewItem isExpanded>
+            <CanvasPanel />
+          </SplitViewItem>
+        </SplitView>
+      </SplitViewItem>
+      <StatusBar />
+    </SplitView>
   );
 }
 
