@@ -1,4 +1,5 @@
-extern crate cfg_if;
+pub mod models;
+
 extern crate wasm_bindgen;
 
 use cfg_if::cfg_if;

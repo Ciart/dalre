@@ -15,9 +15,9 @@ wgpu = "0.13"
 pollster = "0.2"
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
-console_error_panic_hook = "0.1.6"
+console_error_panic_hook = "0.1.7"
 console_log = "0.2.0"
-wgpu = { version = "0.13", features = ["webgl"]}
-wasm-bindgen = "0.2"
-wasm-bindgen-futures = "0.4"
-web-sys = "0.3"
+wgpu = { version = "0.13.1", features = ["webgl"]}
+wasm-bindgen = "0.2.83"
+wasm-bindgen-futures = "0.4.33"
+web-sys = "0.3.60"

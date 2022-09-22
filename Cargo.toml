@@ -2,3 +2,4 @@
 members = [
   "libs/core"
 ]
+resolver = "2"
