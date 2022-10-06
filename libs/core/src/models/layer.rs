@@ -1,3 +1,5 @@
+use rxrust::prelude::*;
+
 #[derive(Debug, Copy, Clone)]
 pub struct Layer {
     width: i32,
@@ -12,8 +14,14 @@ impl Layer {
         }
     }
 
+    let a = observable::of()
+
     pub fn resize(&mut self, width: i32, height: i32) {
         self.width = width;
         self.height = height;
     }
+}
+
+impl Observable for Layer {
+
 }
